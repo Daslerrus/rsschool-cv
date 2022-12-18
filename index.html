@@ -19,9 +19,6 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#contacts" class="nav-link">Contacts</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#skills" class="nav-link">Skills</a>
                         </li>
                         <li class="nav-item">
@@ -33,6 +30,9 @@
                         <li class="nav-item">
                             <a href="#languages" class="nav-link">Languages</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#contacts" class="nav-link">Contacts</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -42,7 +42,10 @@
                 <section class="about-me">
                     <img class="about-me__img" src="./assets/img/photo.jpg" alt="Personal photo">
                     <h1 class="title">Kuzin Artyom</h1>
-                    <span class="about-me__position">Currently student.</span>
+                    <p>I am a student of RS School Frontend Course and gas compressor operator.</p>
+                    <p>I like learning new skills and discovering new things, which help me to improve my job and
+                        mindset.</p>
+                    <p> I have an experience of professional teamwork as well as individual work.</p>
                 </section>
                 <section class="skills">
                     <h2 id="skills" class="subtitle">Skills</h2>
@@ -54,19 +57,39 @@
                         <li class="skills__item">Git & Github</li>
                     </ul>
                 </section>
+                <section class="example">
+                    <h3 class="subtitle">Code example</h3>
+                    <pre class="example__code">
+                        function squareDigits(num){
+                            let result = '';
+                            
+                            `${num}`.split('').forEach((number) => {
+                              result += `${ Number(number) *  Number(number)}`;
+                            })
+                            
+                            return +result;
+                          }
+                    </pre>
+                </section>
                 <section class="experience">
                     <h2 class="subtitle" id="experience">Experience</h2>
                     <ul class="experience__list">
                         <li class="experience__item">
-                            <h3 class="experience__title">Gas compressor operator</h3>
+                            <div class="experience__text">
+                                <p class="experience__company">Gazpromneft</p>
+                                <p class="experience__location">Omsk, Russia</p>
+                            </div>
                             <p class="experience__year">2020 - Present</p>
-                            <p class="experience__company">Gazpromneft</p>
-                            <p class="experience__location">Omsk, Russia</p>
-                            <ul class="experience__responsibilites">
-                                <li class="experience__responsibility">Maintenance of gas compressors and pumps.</li>
-                                <li class="experience__responsibility">Ensuring stable operation of the process plant.
-                                </li>
-                            </ul>
+                            <div class="responsibilities__container">
+                                <h3 class="experience__title">Gas compressor operator</h3>
+                                <ul class="experience__responsibilites">
+                                    <li class="experience__responsibility">Maintenance of gas compressors and pumps.
+                                    </li>
+                                    <li class="experience__responsibility">Ensuring stable operation of the process
+                                        plant.
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </section>
@@ -76,34 +99,45 @@
                         <li class="education__item">
                             <p class="education__year">2016-2020</p>
                             <p class="education__organisation">Omsk State Technical University</p>
-                            <p class="education__speciality">Technological machines and equipment</p>
+                            <div class="speciality__container">
+                                <p>Bachelor's degree</p>
+                                <h3 class="education__speciality">Technological machines and equipment</h3>
+                            </div>
                         </li>
-                        <li class="education__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Exercitationem
-                            perspiciatis quidem enim fugiat laboriosam mollitia dolore soluta voluptatem in cupiditate,
-                            a
-                            aperiam error itaque quasi? Minima aliquam illo facere reiciendis.</li>
                     </ul>
                 </section>
                 <section class="languages">
                     <h2 class="subtitle" id="languages">Languages</h2>
                     <ul class="languages__list">
                         <li class="languages__item">
-                            <p class="language-title">Russian</p>
+                            <h3 class="language-title">Russian</h3>
                             <p>Native</p>
                         </li>
                         <li class="languages__item">
-                            <p class="language-title">English</p>
+                            <h3 class="language-title">English</h3>
                             <p>Intermediate, B2</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contacts">
+                    <h2 class="subtitle" id="contacts">Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <span>email:</span>
+                            <a class="contacts__anchor" href="mailto:daslerus@ya.ru">daslerus@ya.ru</a>
                         </li>
                     </ul>
                 </section>
             </div>
         </main>
         <footer class="footer">
-            <div class="container">
+            <div class="container footer-container">
+                <p class="footer__year">2022</p>
                 <a href="https://github.com/Daslerrus" class="footer__github" target="_blank">
                     <img class="logo" src="./assets/logo/github-mark.png" alt="Github logo">
+                </a>
+                <a href="https://rs.school/js/" target="_blank">
+                    <img class="logo" src="../rsschool-cv/assets/logo/rs_school_js.svg" alt="RSschool logo">
                 </a>
             </div>
         </footer>

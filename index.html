@@ -2,146 +2,231 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Desktop</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container header-container">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience" class="nav-link">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#education" class="nav-link">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#languages" class="nav-link">Languages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contacts" class="nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="container header">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/assets/img/icon/logo_vector.svg" alt="logo image" class="logo-svg">
+                        <span class="logo-text">Plants</span>
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#"><span class="orange">Home</span></a></li>
+                    <li class="nav-item"><a href="#about">About us</a></li>
+                    <li class="nav-item"><a href="#service">Service</a></li>
+                    <li class="nav-item"><a href="#price">Price</a></li>
+                    <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
-            <div class="container">
-                <section class="about-me">
-                    <img class="about-me__img" src="./assets/img/photo.jpg" alt="Personal photo">
-                    <h1 class="title">Kuzin Artyom</h1>
-                    <p>I am a student of RS School Frontend Course and gas compressor operator.</p>
-                    <p>I like learning new skills and discovering new things, which help me to improve my job and
-                        mindset.</p>
-                    <p> I have an experience of professional teamwork as well as individual work.</p>
-                </section>
-                <section class="skills">
-                    <h2 id="skills" class="subtitle">Skills</h2>
-                    <ul class="skills__list">
-                        <li class="skills__item">HTML5</li>
-                        <li class="skills__item">CSS3</li>
-                        <li class="skills__item">JS Basic</li>
-                        <li class="skills__item">SCSS</li>
-                        <li class="skills__item">Git & Github</li>
-                    </ul>
-                </section>
-                <section class="example">
-                    <h3 class="subtitle">Code example</h3>
-                    <pre class="example__code">
-                        function squareDigits(num){
-                            let result = '';
-                            
-                            `${num}`.split('').forEach((number) => {
-                              result += `${ Number(number) *  Number(number)}`;
-                            })
-                            
-                            return +result;
-                          }
-                    </pre>
-                </section>
-                <section class="experience">
-                    <h2 class="subtitle" id="experience">Experience</h2>
-                    <ul class="experience__list">
-                        <li class="experience__item">
-                            <div class="experience__text">
-                                <p class="experience__company">Gazpromneft</p>
-                                <p class="experience__location">Omsk, Russia</p>
-                            </div>
-                            <p class="experience__year">2020 - Present</p>
-                            <div class="responsibilities__container">
-                                <h3 class="experience__title">Gas compressor operator</h3>
-                                <ul class="experience__responsibilites">
-                                    <li class="experience__responsibility">Maintenance of gas compressors and pumps.
-                                    </li>
-                                    <li class="experience__responsibility">Ensuring stable operation of the process
-                                        plant.
-                                    </li>
-                                </ul>
-                            </div>
+        <main class="main">
+            <section class="container welcome">
+                <div class="leafs">
+                    <img src="/assets/img/leafs.png" alt="Leafs image" class="leafs-img">
+                </div>
+                <div class="welcome-info">
+                    <h1 class="welcome-title">
+                        We grow <span class="green">plants</span> and give you oxygen
+                    </h1>
+                    <p class="welcome-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button class="btn welcome-btn">learn more</button>
+                </div>
+            </section>
+            <section class="container about" id="about">
+                <div class="about-info">
+                    <h2 class="about-title">We are <span class="orange">professional experienced</span>
+                        gardeners
+                    </h2>
+                    <p class="about-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+                <div class="houseplant">
+                    <img src="/assets/img/houseplant.png" alt="houseplant photo" class="houseplant-img">
+                </div>
+            </section>
+            <section class="container service" id="service">
+                <div class="service-content">
+                    <h2 class="service-title">Service and our projects</h2>
+                    <ul class="service-content__list">
+                        <li class="service-content__item">
+                            <button class="btn">Gardens</button>
+                        </li>
+                        <li class="service-content__item">
+                            <button class="btn">Lawn</button>
+                        </li>
+                        <li class="service-content__item">
+                            <button class="btn">Planting</button>
                         </li>
                     </ul>
-                </section>
-                <section class="education">
-                    <h2 class="subtitle" id="education">Education</h2>
-                    <ul class="education__list">
-                        <li class="education__item">
-                            <p class="education__year">2016-2020</p>
-                            <p class="education__organisation">Omsk State Technical University</p>
-                            <div class="speciality__container">
-                                <p>Bachelor's degree</p>
-                                <h3 class="education__speciality">Technological machines and equipment</h3>
+                </div>
+                <div class="services">
+                    <ul class="services-list">
+                        <li class="services-item">
+                            <img src="/assets/img/first.jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Garden care</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
-                    </ul>
-                </section>
-                <section class="languages">
-                    <h2 class="subtitle" id="languages">Languages</h2>
-                    <ul class="languages__list">
-                        <li class="languages__item">
-                            <h3 class="language-title">Russian</h3>
-                            <p>Native</p>
+                        <li class="services-item">
+                            <img src="/assets/img/first(1).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Planting</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
+                            </div>
                         </li>
-                        <li class="languages__item">
-                            <h3 class="language-title">English</h3>
-                            <p>Intermediate, B2</p>
+                        <li class="services-item">
+                            <img src="/assets/img/first(2).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Lawn care</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </li>
+                        <li class="services-item">
+                            <img src="/assets/img/first(3).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Planting</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </li>
+                        <li class="services-item">
+                            <img src="/assets/img/first(4).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Garden care</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </li>
+                        <li class="services-item">
+                            <img src="/assets/img/first(5).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item__info">
+                                <h4 class="services-item__subtitle">Planting</h4>
+                                <p class="services-item__text">Lorem Ipsum has been the industry</p>
+                            </div>
                         </li>
                     </ul>
-                </section>
-                <section class="contacts">
-                    <h2 class="subtitle" id="contacts">Contacts</h2>
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <span>email:</span>
-                            <a class="contacts__anchor" href="mailto:daslerus@ya.ru">daslerus@ya.ru</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+                </div>
+            </section>
+            <section class="container prices" id="price">
+                <div class="prices-wrapper">
+                    <article class="price">
+                        <h3 class="price-title">Prices</h3>
+                        <ul class="price-list">
+                            <li class="price-item">
+                                <div class="accordion-btn">
+                                    <span>Basics</span>
+                                    <div class="accordion-dropdown">
+                                        <div class="dropdown"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="price-item">
+                                <div class="accordion-btn">
+                                    <span>Standard</span>
+                                    <div class="accordion-dropdown">
+                                        <div class="dropdown"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="price-item">
+                                <div class="accordion-btn">
+                                    <span>Pro care</span>
+                                    <div class="accordion-dropdown">
+                                        <div class="dropdown"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <div class="prices-info">
+                        <h2 class="prices-title">Our best <span class="green">gardeners</span> are ready to help
+                            you
+                        </h2>
+                        <button class="btn prices-btn">Contact us</button>
+                        <img src="/assets/img/leafs(2).png" alt="" class="leafs-img price-img">
+                    </div>
+                </div>
+            </section>
+            <section class="contacts container" id="contacts">
+                <div class="contacts-wrapper">
+                    <div class="contacts-img">
+                        <img src="/assets/img/contact_woman.png" alt="Photo of woman" class="woman-img">
+                    </div>
+                    <div class="contacts-info">
+                        <h2 class="contacts-title green">Contact us</h2>
+                    </div>
+                    <div class="contacts-container">
+                        <input type="text" class="contacts-input" placeholder="City">
+                        <div class="accordion-dropdown contacts-accordion">
+                            <div class="dropdown contacts-dropdown"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer">
-            <div class="container footer-container">
-                <p class="footer__year">2022</p>
-                <a href="https://github.com/Daslerrus" class="footer__github" target="_blank">
-                    <img class="logo" src="./assets/logo/github-mark.png" alt="Github logo">
-                </a>
-                <a href="https://rs.school/js/" target="_blank">
-                    <img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RSschool logo">
-                </a>
+        <footer class="footer container">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-data">
+                        <p>&#169;</p>
+                        <p class="year">2023</p>
+                        <a href="https://github.com/Daslerrus" target="_blank" class="github">github</a>
+                    </div>
+                    <a href="https://rs.school/js-stage0/" class="rsschool-name" target="_blank">Rolling Scopes
+                        School</a>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="/assets/img/icon/inst.svg" alt="Instagram logo">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="/assets/img/icon/fb.svg" alt="Facebook logo">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="/assets/img/icon/tw.svg" alt="Twitter logo">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="/assets/img/icon/pinterest.svg" alt="Pinterest logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
+    <script src="/index.js"></script>
 </body>
 
 </html>

@@ -63,10 +63,14 @@ h2 {
 }
 
 /* BUTTONS */
+.burger-btn {
+    display: none;
+}
+
 .btn {
     box-sizing: border-box;
     text-align: center;
-    padding: 12px;
+    margin: 0 auto;
     width: 161px;
     height: 50px;
 
@@ -88,8 +92,9 @@ h2 {
 }
 
 .welcome-btn {
-    padding: 10px 27px;
+    padding: 0px 27px;
     width: auto;
+    height: 44px;
 
     border-width: 2px;
     border-radius: 10px;
@@ -159,14 +164,12 @@ h2 {
 } */
 
 /* HEADER */
-.header {}
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin-bottom: 8px;
 }
 
 .logo-svg {
@@ -192,10 +195,6 @@ h2 {
     gap: 46px;
     color: var(--link-black);
     margin: 0;
-}
-
-.nav-item:first-child {
-    font-weight: 700;
 }
 
 .nav-item>a {
@@ -337,14 +336,36 @@ h2 {
 
 .services-item {
     max-width: 330px;
+    max-height: 450px;
 
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     overflow: hidden;
 }
 
+.services-item-container {
+    max-height: 350px;
+    max-width: 330px;
+    overflow: hidden;
+}
+
 .services-item__img {
+    position: relative;
+    top: -70px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-cover {
+    position: relative;
+    top: 0;
+    left: -30%;
+    width: 160%;
+
 }
 
 .services-item__info {
@@ -411,7 +432,7 @@ h2 {
 .prices-info {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 38px;
 }
 
@@ -428,11 +449,20 @@ h2 {
 
 .prices-btn {
     display: block;
+    margin-right: 0;
     background-color: #fff;
 }
 
+.price-img-container {
+    max-height: 152px;
+}
+
 .price-img {
-    max-width: 152px;
+    max-width: 105%;
+    display: block;
+    position: relative;
+    left: 2%;
+
 }
 
 /* CONTACTS SECTION */
@@ -578,29 +608,57 @@ h2 {
 
     .navbar {
         padding: 35px 0;
+        margin: 0;
     }
+
+    .logo {
+        height: 47px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list {
+        height: 47px;
+        align-items: center;
+    }
+
 
     /* WELCOME SECTION */
 
     .welcome-container {
         flex-direction: row-reverse;
+        justify-content: space-between;
         gap: 0;
         margin-top: 40px;
         margin-bottom: 70px;
     }
 
     .welcome-info {
-        margin: 0
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-end;
+
+        margin: 0;
+        max-width: 346px;
     }
 
     .welcome-title {
         font-size: 35px;
-        line-height: 45px;
+        line-height: 50px;
+        margin-bottom: 0;
     }
 
     .welcome-text {
         font-size: 16px;
         line-height: 25px;
+        margin: 0;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .welcome-btn {
+        margin-left: 0;
     }
 
     .leafs {
@@ -621,13 +679,17 @@ h2 {
 
     .about-info {
         max-width: none;
-        margin: 40px 0;
+        margin: 40px 0 68px;
     }
 
     .about-title {
-        text-align: center;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+
     }
 
     .houseplant-img {
@@ -639,8 +701,19 @@ h2 {
     .service-content {
         flex-direction: column;
         align-items: flex-start;
+        gap: 40px;
 
         margin: 60px 0 40px 0;
+    }
+
+    .service-title {
+        font-size: 35px;
+        line-height: 46px;
+
+    }
+
+    .service-content__list {
+        margin: 0;
     }
 
     .services-list {
@@ -659,6 +732,16 @@ h2 {
         border: 1px solid #E3E1D5;
         border-radius: 20px;
         overflow: hidden;
+    }
+
+    .services-item__img {
+        top: -35px;
+    }
+
+    .img-cover {
+        top: 0;
+        left: -45%;
+        width: 190%;
     }
 
     .services-item__info {
@@ -694,7 +777,8 @@ h2 {
     .price-title {
         font-size: 35px;
         line-height: 42px;
-        margin-bottom: 50px;
+        margin-bottom: 57px;
+        margin-left: 15px;
     }
 
     .price-list {
@@ -703,13 +787,27 @@ h2 {
 
     .prices-info {
         max-width: 296px;
-        margin-top: 92px;
-        gap: 34px;
+        margin-top: 99px;
+        gap: 0;
     }
 
     .prices-title {
         font-size: 25px;
         line-height: 35px;
+        margin-bottom: 29px;
+    }
+
+    .prices-btn {
+        margin-bottom: 34px;
+    }
+
+    .price-img-container {
+        max-height: 175px;
+    }
+
+    .price-img {
+        left: 7%;
+        top: -2%;
     }
 
     /* CONTACTS SECTION */
@@ -732,6 +830,7 @@ h2 {
     .contacts-img {
         max-height: 248.5px;
         margin: 0 auto;
+        padding-left: 3%;
         order: 3;
     }
 
@@ -770,5 +869,303 @@ h2 {
 
     .social-list {
         height: 50px;
+    }
+
+    .social-item {
+        margin-top: 10px;
+    }
+}
+
+/* MOBILE = 380px */
+
+@media screen and (max-width: 380px) {
+
+    h2 {
+        font-size: 25px;
+        line-height: 33px;
+        letter-spacing: 0em;
+    }
+
+
+    .wrapper {
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        height: 35px;
+        width: 121px;
+
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .accordion-btn {
+        cursor: pointer;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #EDF2EC;
+
+        width: 180px;
+        height: 50px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 28px;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+
+
+        border: none;
+        border-radius: 20px;
+    }
+
+    /* HEADER */
+
+    .navbar {
+        margin: 37px 0;
+        padding: 0;
+
+        height: 24px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+        height: 24px;
+        width: 40px;
+
+        border-top: 2px solid #717171;
+        border-bottom: 2px solid #717171;
+    }
+
+    /* MAIN */
+
+    /* WELCOME SECTION */
+
+    .welcome-container {
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .leafs {
+        display: none;
+    }
+
+    .welcome-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .welcome-title {
+        margin: 0;
+
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .welcome-text {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .welcome-btn {
+        width: 100px;
+        height: 34px;
+
+        margin-left: 0;
+        padding: 0;
+
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-container {
+        padding-top: 30px;
+        padding-bottom: 33px;
+    }
+
+    .about-info {
+        margin: 0;
+    }
+
+    .about-title {
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+
+    .about-text {
+        margin: 0;
+
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0em;
+    }
+
+    .houseplant {
+        max-width: 150px;
+        max-height: 147px;
+    }
+
+    .houseplant-img {
+        max-width: 150px;
+    }
+
+    /* SERVICE SECTION */
+
+    .service {
+        padding-bottom: 27px;
+    }
+
+    .service-content {
+        gap: 39px;
+
+        margin-top: 30px;
+        margin-bottom: 38px;
+    }
+
+    .service-title {
+        max-width: 187px;
+
+        font-size: 25px;
+        line-height: 33px;
+        letter-spacing: 0em;
+    }
+
+    .service-content__list {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        margin: 0;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 34px;
+        align-items: center;
+    }
+
+    /* PRICES SECTION */
+
+    .prices {
+        padding: 0;
+    }
+
+    .prices-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .price {
+        margin-bottom: 22px;
+    }
+
+    .price-title {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 35px;
+
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+
+    .price-list {
+        margin: 0 auto;
+        padding: 29px 22px;
+
+        max-width: 224px;
+        max-height: 235px;
+
+        gap: 14px;
+    }
+
+    .prices-info {
+        margin-top: 0;
+        align-items: center;
+        gap: 0;
+    }
+
+    .prices-title {
+        max-width: 230px;
+        margin-bottom: 20px;
+
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .prices-btn {
+        margin: 0;
+    }
+
+    .price-img {
+        display: none;
+    }
+
+    /* CONTACTS SECTION */
+
+    .contacts-wrapper {
+
+        margin-top: 25px;
+    }
+
+    .contacts-title {
+        margin-bottom: 80px;
+
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .contacts-container {
+        max-width: 300px;
+
+        margin-bottom: 132px;
+        padding-right: 20px;
+    }
+
+    .contacts-img {
+        padding-left: 0;
+    }
+
+    .woman-img {
+        display: block;
+        max-width: 100px;
+        margin-bottom: 0;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        padding-top: 22px;
+        padding-bottom: 7px;
+    }
+
+    .footer-content {
+        gap: 0;
+    }
+
+    .footer-data {
+        margin-bottom: 16px;
+        gap: 22px;
     }
 }

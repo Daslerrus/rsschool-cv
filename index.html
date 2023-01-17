@@ -27,17 +27,18 @@
                     </a>
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#"><span class="orange">Home</span></a></li>
+                    <li class="nav-item"><a href="#">Home</a></li>
                     <li class="nav-item"><a href="#about">About us</a></li>
                     <li class="nav-item"><a href="#service">Service</a></li>
                     <li class="nav-item"><a href="#price">Price</a></li>
                     <li class="nav-item"><a href="#contacts">Contacts</a></li>
                 </ul>
+                <div class="burger-btn"></div>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="container welcome">
+        <section class="welcome">
             <div class="wrapper welcome-container">
                 <div class="leafs">
                     <img src="./assets/img/leafs.png" alt="Leafs image" class="leafs-img">
@@ -56,7 +57,7 @@
                 </div>
             </div>
         </section>
-        <section class="container about" id="about">
+        <section class="about" id="about">
             <div class="wrapper about-container">
                 <div class="about-info">
                     <h2 class="about-title">We are <span class="orange">professional experienced</span>
@@ -80,7 +81,7 @@
                 </div>
             </div>
         </section>
-        <section class="container service" id="service">
+        <section class="service" id="service">
             <div class="wrapper">
                 <div class="service-content">
                     <h2 class="service-title">Service and our projects</h2>
@@ -99,42 +100,60 @@
                 <div class="services">
                     <ul class="services-list">
                         <li class="services-item">
-                            <img src="./assets/img/first.jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-1.jpg" alt="Service item photo"
+                                    class="services-item__img">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Garden care</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
                         <li class="services-item">
-                            <img src="./assets/img/first(1).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-2.jpg" alt="Service item photo"
+                                    class="services-item__img">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Planting</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
                         <li class="services-item">
-                            <img src="./assets/img/first(2).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-3.jpg" alt="Service item photo"
+                                    class="services-item__img img-cover">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Lawn care</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
                         <li class="services-item">
-                            <img src="./assets/img/first(3).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-4.jpg" alt="Service item photo"
+                                    class="services-item__img">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Planting</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
                         <li class="services-item">
-                            <img src="./assets/img/first(4).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-5.jpg" alt="Service item photo"
+                                    class="services-item__img">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Garden care</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </li>
                         <li class="services-item">
-                            <img src="./assets/img/first(5).jpg" alt="Service item photo" class="services-item__img">
+                            <div class="services-item-container">
+                                <img src="./assets/img/services-item-6.jpg" alt="Service item photo"
+                                    class="services-item__img">
+                            </div>
                             <div class="services-item__info">
                                 <h4 class="services-item__subtitle">Planting</h4>
                                 <p class="services-item__text">Lorem Ipsum has been the industry</p>
@@ -144,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="container prices" id="price">
+        <section class="prices" id="price">
             <div class="wrapper prices-wrapper">
                 <article class="price">
                     <h3 class="price-title">Prices</h3>
@@ -180,11 +199,13 @@
                         you
                     </h2>
                     <button class="btn prices-btn">Contact us</button>
-                    <img src="./assets/img/leafs(2).png" alt="" class="leafs-img price-img">
+                    <div class="price-img-container">
+                        <img src="./assets/img/leafs(2).png" alt="" class="leafs-img price-img">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contacts container" id="contacts">
+        <section class="contacts" id="contacts">
             <div class="wrapper contacts-wrapper">
                 <div class="contacts-img">
                     <img src="./assets/img/contact_woman.png" alt="Photo of woman" class="woman-img">

@@ -880,6 +880,11 @@ h2 {
 
 @media screen and (max-width: 380px) {
 
+    /* BODY */
+    .no-scroll {
+        overflow: hidden;
+    }
+
     h2 {
         font-size: 25px;
         line-height: 33px;
@@ -934,19 +939,70 @@ h2 {
         padding: 0;
 
         height: 24px;
+
+        flex-wrap: wrap;
     }
 
+
     .nav-list {
-        display: none;
+        position: absolute;
+        left: -1000px;
+        top: 61px;
+        z-index: 1000;
+
+        flex-direction: column;
+
+
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 0;
+
+        background-color: var(--bg-grey);
+        transition: 0.5s;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-item {
+        position: relative;
+        left: -1000px;
+        font-size: 20px;
+        transition: left 1s;
+    }
+
+    .nav-item.active {
+        left: 0;
     }
 
     .burger-btn {
-        display: block;
-        height: 24px;
-        width: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 
-        border-top: 2px solid #717171;
-        border-bottom: 2px solid #717171;
+    .burger-line {
+        width: 40px;
+        border-top: 3px solid #717171;
+        transition: 0.3s;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .line-rotate-pos {
+        position: relative;
+        top: 4px;
+        transform: rotate(45deg);
+
+    }
+
+    .line-rotate-neg {
+        position: relative;
+        bottom: 4px;
+        transform: rotate(-45deg);
     }
 
     /* MAIN */
@@ -1137,7 +1193,7 @@ h2 {
     }
 
     .contacts-container {
-        max-width: 300px;
+        max-width: 79vw;
 
         margin-bottom: 132px;
         padding-right: 20px;
